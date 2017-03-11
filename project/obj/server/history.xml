@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="g++ noversion nomachine -std=c++11 -c -I../../../../usr/local/include">
+      <target file="Server.o" lastModified="1543b71d708">
+         <source file="../../src/server/Server.cpp" lastModified="1541c2fa0a0"/>
+      </target>
+      <target file="Profiles.o" lastModified="1543b7209d0">
+         <source file="../../src/server/Profiles.cpp" lastModified="1541c2fead8"/>
+      </target>
+      <target file="Profile.o" lastModified="1543b71ee78">
+         <source file="../../src/server/Profile.cpp" lastModified="1540c8772e0"/>
+      </target>
+      <target file="Log.o" lastModified="1543b71e2c0">
+         <source file="../../src/server/Log.cpp" lastModified="153fc3a2b80"/>
+      </target>
+   </processor>
+</history>

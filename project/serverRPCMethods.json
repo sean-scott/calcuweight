@@ -1,0 +1,29 @@
+[
+  {
+    "method":"addUser",
+    "params":[{}],
+    "returns":true
+  },
+  {
+    "method":"removeUser",
+    "params":[0],
+    "returns":true
+  },
+  {
+    "method":"getUser",
+    "params":[0],
+    "returns":[]
+  },
+  {
+    "method":"getUserCount",
+    "params":[],
+    "returns":0
+  },
+  {
+    "method":"removeLog",
+    "params":[0,0],
+    "returns":true
+  }
+]
+    
+    

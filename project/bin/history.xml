@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="gcc -L../../../../../usr/local/lib -ljsoncpp -ljsonrpccpp-server -ljsonrpccpp-common -lmicrohttpd -lstdc++">
+      <target file="server" lastModified="1543b720db8">
+         <source file="../../../../../usr/local/lib/libjsonrpccpp-server.so.0.6.0" lastModified="15067dc5380"/>
+         <source file="../../../../../usr/local/lib/libjsonrpccpp-common.so.0.6.0" lastModified="15067db9418"/>
+         <source file="../obj/server/Server.o" lastModified="1543b71d708"/>
+         <source file="../obj/server/Log.o" lastModified="1543b71e2c0"/>
+         <source file="../obj/server/Profile.o" lastModified="1543b71ee78"/>
+         <source file="../obj/server/Profiles.o" lastModified="1543b7209d0"/>
+      </target>
+   </processor>
+</history>

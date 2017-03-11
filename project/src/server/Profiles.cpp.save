@@ -1,0 +1,84 @@
+#include "Profiles.hpp"
+
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <jsoncpp/json/json.h>
+
+using namespace std;
+
+/**
+ * Profiles.cpp
+ * Implements Profiles.hpp
+ *
+ * @author Sean Scott
+ */
+
+void Profiles::initListFromJsonFile(std::string jsonFilename)
+{
+    reset();
+
+    Json::Reader reader;
+    Json::Value root;
+    std::ifstream json(jsonFilename.c_str(), std::ifstream::binary);
+    bool parseSuccess = reader.parse(json, root, false);
+    if (parseSuccess)
+    {
+        for (Json::ValueConstIterator it = books.begin(); it != bi)
+        {
+            cout << "id "<< user["id"] << endl;
+        }
+    }
+}
+
+void Profiles::toJsonFile(std::string jsonFilename)
+{
+}
+
+bool Profiles::add(Profile* user)
+{
+    list.push_back(user);
+
+    return true;
+}
+
+bool Profiles::remove(int id)
+{
+    for (int i = 0; i < list.size(); i++)
+    {
+        if (list.at(i)->getId() == id)
+        {
+            cout << "Removing " << id << endl;
+            list.erase(list.begin()+i);
+            return true;
+        }
+    }
+
+    return false;
+}
+
+Profile* Profiles::get(int id)
+{
+    for (int i = 0; i < list.size(); i++)
+    {
+        if (list.at(i)->getId() == id)
+        {
+            return list.at(i);
+        }
+    }
+
+    return new Profile();
+}
+
+int Profiles::size()
+{
+  return list.size();
+}
+
+void Profiles::reset()
+{
+  list.clear();
+}
